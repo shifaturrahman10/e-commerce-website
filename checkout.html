@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - MyShop</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="left-nav">
+      <h1 class="logo">MyShop</h1>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="checkout-section">
+
+  <h2>Checkout</h2>
+
+  <form id="checkout-form">
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="text" placeholder="Phone Number" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Address" required></textarea>
+<h3>Choose Payment Method</h3>
+
+<div class="payment-methods">
+
+  <label>
+    <input type="radio" name="payment" value="cod" checked>
+    Cash on Delivery
+  </label>
+
+  <label>
+    <input type="radio" name="payment" value="bkash">
+    bKash
+  </label>
+
+  <label>
+    <input type="radio" name="payment" value="nagad">
+    Nagad
+  </label>
+
+</div>
+
+<div id="mobile-payment-box">
+  <input type="text" placeholder="Payment Number (optional)">
+</div>
+    <h3>Total: $<span id="checkout-total">0</span></h3>
+
+    <button type="submit">Confirm Order</button>
+
+  </form>
+
+</section>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>

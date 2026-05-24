@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Admin Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+
+    <h1 class="logo">MyShop Admin</h1>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="orders.html">Orders</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+<section class="admin-section">
+
+  <h2>Dashboard</h2>
+<button id="logout-btn">Logout</button>
+  <div class="dashboard-cards">
+
+    <div class="dashboard-card">
+      <h3>Total Orders</h3>
+      <p id="total-orders">0</p>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>Total Revenue</h3>
+      <p>$<span id="total-revenue">0</span></p>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>Products Sold</h3>
+      <p id="products-sold">0</p>
+    </div>
+
+  </div>
+
+  <div class="recent-orders">
+
+    <h3>Recent Orders</h3>
+
+    <div id="recent-orders-container"></div>
+
+  </div>
+
+</section>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
