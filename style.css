@@ -119,10 +119,10 @@ body{
 }
 
 .product-container{
-  display: grid;
-  grid-tamplate-columns: repeat(2, 1fr);
-  gap: 15px;
-  padding: 10px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 15px;
+padding: 10px;
 }
 
 .product-card{
